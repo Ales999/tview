@@ -8,8 +8,8 @@ import (
 	"image/jpeg"
 	"image/png"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/tview"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/tview"
 )
 
 const (

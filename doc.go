@@ -38,7 +38,7 @@ world!":
 	package main
 
 	import (
-		"github.com/rivo/tview"
+		"github.com/ales999/tview"
 	)
 
 	func main() {
@@ -218,7 +218,7 @@ You will need to call [Box.SetBorder] separately:
 All widgets also implement the [Primitive] interface.
 
 The tview package's rendering is based on version 2 of
-https://github.com/gdamore/tcell. It uses types and constants from that package
+https://github.com/ales999/tcell. It uses types and constants from that package
 (e.g. colors, styles, and keyboard values).
 */
 package tview

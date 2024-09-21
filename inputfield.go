@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/uniseg"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/uniseg"
 )
 
 const (
@@ -73,7 +73,7 @@ var (
 //   - Down arrow: Open the autocomplete drop-down.
 //   - Tab, Enter: Select the current autocomplete entry.
 //
-// See https://github.com/rivo/tview/wiki/InputField for an example.
+// See https://github.com/ales999/tview/wiki/InputField for an example.
 type InputField struct {
 	*Box
 

@@ -1,7 +1,7 @@
 # Rich Interactive Widgets for Terminal UIs
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/rivo/tview)](https://pkg.go.dev/github.com/rivo/tview)
-[![Go Report](https://img.shields.io/badge/go%20report-A%2B-brightgreen.svg)](https://goreportcard.com/report/github.com/rivo/tview)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/ales999/tview)](https://pkg.go.dev/github.com/ales999/tview)
+[![Go Report](https://img.shields.io/badge/go%20report-A%2B-brightgreen.svg)](https://goreportcard.com/report/github.com/ales999/tview)
 
 This Go package provides commonly used components for terminal based user interfaces.
 
@@ -27,7 +27,7 @@ They come with lots of customization options and can be easily extended to fit y
 To add this package to your project:
 
 ```bash
-go get github.com/rivo/tview@master
+go get github.com/ales999/tview@master
 ```
 
 ## Hello World
@@ -38,7 +38,7 @@ This basic example creates a box titled "Hello, World!" and displays it in your 
 package main
 
 import (
-	"github.com/rivo/tview"
+	"github.com/ales999/tview"
 )
 
 func main() {
@@ -49,7 +49,7 @@ func main() {
 }
 ```
 
-Check out the [GitHub Wiki](https://github.com/rivo/tview/wiki) for more examples along with screenshots. Or try the examples in the "demos" subdirectory.
+Check out the [GitHub Wiki](https://github.com/ales999/tview/wiki) for more examples along with screenshots. Or try the examples in the "demos" subdirectory.
 
 For a presentation highlighting this package, compile and run the program found in the "demos/presentation" subdirectory.
 
@@ -137,23 +137,23 @@ For a presentation highlighting this package, compile and run the program found 
 
 ## Documentation
 
-Refer to https://pkg.go.dev/github.com/rivo/tview for the package's documentation. Also check out the [Wiki](https://github.com/rivo/tview/wiki).
+Refer to https://pkg.go.dev/github.com/ales999/tview for the package's documentation. Also check out the [Wiki](https://github.com/ales999/tview/wiki).
 
 ## Dependencies
 
-This package is based on [github.com/gdamore/tcell](https://github.com/gdamore/tcell) (and its dependencies) as well as on [github.com/rivo/uniseg](https://github.com/rivo/uniseg).
+This package is based on [github.com/ales999/tcell](https://github.com/ales999/tcell) (and its dependencies) as well as on [github.com/ales999/uniseg](https://github.com/ales999/uniseg).
 
 ## Sponsor this Project
 
-[Become a Sponsor on GitHub](https://github.com/sponsors/rivo?metadata_source=tview_readme) to further this project!
+[Become a Sponsor on GitHub](https://github.com/sponsors/ales999?metadata_source=tview_readme) to further this project!
 
 ## Versioning and Backwards-Compatibility
 
 I try really hard to keep this project backwards compatible. Your software should not break when you upgrade `tview`. But this also means that some of its shortcomings that were present in the initial versions will remain. In addition, at least for the time being, you won't find any version tags in this repo. The newest version should be the one to upgrade to. It has all the bugfixes and latest features. Having said that, backwards compatibility may still break when:
 
-- a new version of an imported package (most likely [`tcell`](https://github.com/gdamore/tcell)) changes in such a way that forces me to make changes in `tview` as well,
+- a new version of an imported package (most likely [`tcell`](https://github.com/ales999/tcell)) changes in such a way that forces me to make changes in `tview` as well,
 - I fix something that I consider a bug, rather than a feature, something that does not work as originally intended,
-- I make changes to "internal" interfaces such as [`Primitive`](https://pkg.go.dev/github.com/rivo/tview#Primitive). You shouldn't need these interfaces unless you're writing your own primitives for `tview`. (Yes, I realize these are public interfaces. This has advantages as well as disadvantages. For the time being, it is what it is.)
+- I make changes to "internal" interfaces such as [`Primitive`](https://pkg.go.dev/github.com/ales999/tview#Primitive). You shouldn't need these interfaces unless you're writing your own primitives for `tview`. (Yes, I realize these are public interfaces. This has advantages as well as disadvantages. For the time being, it is what it is.)
 
 ## Your Feedback
 

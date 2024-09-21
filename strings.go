@@ -7,8 +7,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/uniseg"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/uniseg"
 )
 
 // escapedTagPattern matches an escaped tag, e.g. "[red[]", at the beginning of

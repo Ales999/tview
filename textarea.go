@@ -5,8 +5,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/uniseg"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/uniseg"
 )
 
 const (
@@ -1603,15 +1603,15 @@ RowLoop:
 // must return the new cluster, the new width, and the new boundaries. This only
 // affects the drawing of the text, not the text content itself. The boundaries
 // values correspond to the values returned by
-// [github.com/rivo/uniseg.StepString].
+// [github.com/ales999/uniseg.StepString].
 func (t *TextArea) setTransform(transform func(cluster, rest string, boundaries int) (newCluster string, newBoundaries int)) {
 	t.transform = transform
 }
 
-// step is similar to [github.com/rivo/uniseg.StepString] but it iterates over
+// step is similar to [github.com/ales999/uniseg.StepString] but it iterates over
 // the piece chain, starting with "pos", a span position plus state (which may
 // be -1 for the start of the text). The returned "boundaries" value is the same
-// value returned by [github.com/rivo/uniseg.StepString], "width" is the screen
+// value returned by [github.com/ales999/uniseg.StepString], "width" is the screen
 // width of the grapheme. The "pos" and "endPos" positions refer to the start
 // and the end of the "text" string, respectively. For the first call, text may
 // be empty and pos/endPos may be the same. For consecutive calls, provide

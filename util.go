@@ -5,7 +5,7 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/gdamore/tcell/v2"
+	"github.com/ales999/tcell/v2"
 )
 
 // Text alignment within a box. Also used to align images.

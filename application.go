@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gdamore/tcell/v2"
+	"github.com/ales999/tcell/v2"
 )
 
 const (
@@ -636,7 +636,7 @@ func (a *Application) Suspend(f func()) bool {
 	defer a.RUnlock()
 	if a.screen != screen {
 		// Calling Stop() while in suspend mode currently still leads to a
-		// panic, see https://github.com/gdamore/tcell/issues/440.
+		// panic, see https://github.com/ales999/tcell/issues/440.
 		screen.Fini()
 		if a.screen == nil {
 			return true // If stop was called (a.screen is nil), we're done already.
@@ -655,7 +655,7 @@ func (a *Application) Suspend(f func()) bool {
 // buffer. It is almost never necessary to call this function. It can actually
 // deadlock your application if you call it from the main thread (e.g. in a
 // callback function of a widget). Please see
-// https://github.com/rivo/tview/wiki/Concurrency for details.
+// https://github.com/ales999/tview/wiki/Concurrency for details.
 func (a *Application) Draw() *Application {
 	a.QueueUpdate(func() {
 		a.draw()

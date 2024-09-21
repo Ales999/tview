@@ -1,13 +1,13 @@
 package tview
 
 import (
-	"github.com/gdamore/tcell/v2"
+	"github.com/ales999/tcell/v2"
 )
 
 // Checkbox implements a simple box for boolean values which can be checked and
 // unchecked.
 //
-// See https://github.com/rivo/tview/wiki/Checkbox for an example.
+// See https://github.com/ales999/tview/wiki/Checkbox for an example.
 type Checkbox struct {
 	*Box
 

@@ -3,13 +3,13 @@ package main
 import (
 	"strings"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/tview"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/tview"
 )
 
 const treeAllCode = `[green]package[white] main
 
-[green]import[white] [red]"github.com/rivo/tview"[white]
+[green]import[white] [red]"github.com/ales999/tview"[white]
 
 [green]func[white] [yellow]main[white]() {
 	$$$

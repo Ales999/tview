@@ -4,8 +4,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/gdamore/tcell/v2"
-	"github.com/rivo/tview"
+	"github.com/ales999/tcell/v2"
+	"github.com/ales999/tview"
 )
 
 // RadioButtons implements a simple primitive for radio button selections.
